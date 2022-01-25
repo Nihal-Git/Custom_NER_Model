@@ -6,7 +6,7 @@ import spacy
 def test(sent):
 
     try:
-        nlp = spacy.load("/Users/nihaltodankar/Documents/people-module/nlp/saved_model")
+        nlp = spacy.load("mark_2/saved_model")
 
         text = nlp(sent)
         vis = visualize_ner(text, labels=nlp.get_pipe("ner").labels)
